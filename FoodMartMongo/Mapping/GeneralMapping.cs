@@ -10,20 +10,20 @@ namespace FoodMartMongo.Mapping
     {
         public GeneralMapping()
         {
-            CreateMap<Category, ResultCategoryDto>();
-            CreateMap<Category, CreateCategoryDto>();
-            CreateMap<Category, UpdateCategoryDto>();
-            CreateMap<Category, GetCategoryByIdDto>();
+            CreateMap<Category, ResultCategoryDto>().ReverseMap();
+            CreateMap<Category, CreateCategoryDto>().ReverseMap();
+            CreateMap<Category, UpdateCategoryDto>().ReverseMap();
+            CreateMap<Category, GetCategoryByIdDto>().ReverseMap();
 
-            CreateMap<Product, ResultProductDto>();
-            CreateMap<Product, UpdateProductDto>();
-            CreateMap<Product, CreateProductDto>();
-            CreateMap<Product, GetProductByIdDto>();
+            CreateMap<Product, ResultProductDto>().ReverseMap();
+            CreateMap<Product, UpdateProductDto>().ReverseMap();
+            CreateMap<Product, CreateProductDto>().ReverseMap();
+            CreateMap<Product, GetProductByIdDto>().ReverseMap();
 
-            CreateMap<Customer, ResultCustomerDto>();
-            CreateMap<Customer, CreateCustomerDto>();
-            CreateMap<Customer, UpdateCustomerDto>();
-            CreateMap<Customer, GetCustomerByIdDto>();
+            CreateMap<Customer, ResultCustomerDto>().ReverseMap();
+            CreateMap<Customer, CreateCustomerDto>().ReverseMap();
+            CreateMap<Customer, UpdateCustomerDto>().ReverseMap();
+            CreateMap<Customer, GetCustomerByIdDto>().ReverseMap();
         }
     }
 }
