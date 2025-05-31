@@ -1,0 +1,18 @@
+﻿@model FoodMartMongo.Dtos.SearchKeyDtos.CreateSearchKeyDto
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml"; ;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br /><br />
+    <h3 class="alert alert-primary">Yeni Kategori Ekleme Sayfası</h3>
+    <form method="post">
+        <label>Kategori Adı</label>
+        <input type="text" asp-for="Title" class="form-control" />
+        <br />        
+        <button class="btn btn-info">Kelime Ekle</button>
+    </form>
+</div>

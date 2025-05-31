@@ -1,0 +1,29 @@
+﻿@model List<FoodMartMongo.Dtos.SearchKeyDtos.ResultSearchKeyDto>
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml"; ;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br /><br />
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Aranan Kelime Başlığı</th>            
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.SearchKeyId</td>
+                <td>@item.Title</td>
+                <td><a href="/SearchKey/DeleteSearchKey/@item.SearchKeyId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/SearchKey/UpdateSearchKey/@item.SearchKeyId" class="btn btn-success">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+    <a href="/SearchKey/CreateSearchKey/" class="btn btn-primary">Yeni Kelime Girişi</a>
+</div>

@@ -1,0 +1,19 @@
+﻿@model FoodMartMongo.Dtos.SearchKeyDtos.GetSearchKeyByIdDto
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml"; ;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br /><br />
+    <h3 class="alert alert-primary">Aranan Kelime Güncelleme Sayfası</h3>
+    <form method="post">
+        <input type="hidden" asp-for="SearchKeyId" />
+        <label>Kategori Adı</label>
+        <input type="text" asp-for="Title" class="form-control" />
+        <br />        
+        <button class="btn btn-info">Kelime Güncelle</button>
+    </form>
+</div>

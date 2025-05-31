@@ -1,0 +1,27 @@
+﻿@model FoodMartMongo.Dtos.DiscountDtos.GetDiscountByIdDto
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml"; ;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br /><br />
+    <h3 class="alert alert-primary">İndirim Güncelleme Sayfası</h3>
+    <form method="post">
+        <input type="hidden" asp-for="DiscountId" />
+        <label>İndirim Başlık</label>
+        <input type="text" asp-for="Title" class="form-control" />
+        <br />
+        <label>İndirim Alt Başlık</label>
+        <input type="text" asp-for="Subtitle" class="form-control" />
+        <br />
+        <label>İndirim Açıklama</label>
+        <input type="text" asp-for="Description" class="form-control" />
+        <br />
+        <label>Image URL Bilgisi</label>
+        <input type="text" asp-for="ImageUrl" class="form-control" />
+        <br />
+        <button class="btn btn-info">İndirim Güncelle</button>
+    </form>
+</div>

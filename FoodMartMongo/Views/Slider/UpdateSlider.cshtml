@@ -1,0 +1,27 @@
+﻿@model FoodMartMongo.Dtos.SliderDtos.GetSliderByIdDto
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml"; ;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br /><br />
+    <h3 class="alert alert-primary">Slider Güncelleme Sayfası</h3>
+    <form method="post">
+        <input type="hidden" asp-for="SliderId" />
+        <label>Slider Başlık</label>
+        <input type="text" asp-for="Title" class="form-control" />
+        <br />
+        <label>Slider Alt Başlık</label>
+        <input type="text" asp-for="Subtitle" class="form-control" />
+        <br />
+        <label>Slider Açıklama</label>
+        <input type="text" asp-for="Description" class="form-control" />
+        <br />
+        <label>Slider Image URL</label>
+        <input type="text" asp-for="ImageUrl" class="form-control" />
+        <br />
+        <button class="btn btn-info">Slider Güncelle</button>
+    </form>
+</div>

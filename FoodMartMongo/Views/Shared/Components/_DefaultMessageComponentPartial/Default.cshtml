@@ -1,0 +1,46 @@
+﻿<section id="Message" class="py-5">
+    <div class="container-fluid">
+
+        <div class="bg-secondary py-5 my-5 rounded-5" style="background: url('images/bg-leaves-img-pattern.png') no-repeat;">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-md-6 p-5">
+                        <div class="section-header">
+                            <h2 class="section-title display-4"><span class="text-primary">%20 İndirim</span> İlk Alışverişlerde Geçerli</h2>
+                        </div>
+                        <p>Mesaj Gönderebilirsiniz.  Süpriz İndirim Kodu Gönderilecektir...</p>
+                    </div>
+                    <div class="col-md-6 p-5">
+                        <form asp-controller="Message"  asp-action="SendDiscountCode" method="post">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Ad Soyad</label>
+                                <input type="text"
+                                       class="form-control form-control-lg" name="name" id="name" placeholder="Ad Soyad">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Eposta Adresi</label>
+                                <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="abc@mail.com">
+                            </div>
+                            <div class="form-check form-check-inline mb-3">
+                                <label class="form-check-label" for="subscribe">
+                                    <input class="form-check-input" type="checkbox" id="subscribe" value="subscribe">
+                                    Bültene abone olun
+                                </label>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-dark btn-lg">Gönder</button>
+                            </div>
+                        </form>
+                        @if (ViewBag.Message != null)
+                        {
+                            <div class="alert alert-success mt-2">@ViewBag.Message</div>
+                        }
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

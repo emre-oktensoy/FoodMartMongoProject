@@ -1,7 +1,7 @@
 ﻿@model FoodMartMongo.Dtos.CategoryDtos.GetCategoryByIdDto
 
 @{
-    Layout = null;
+    Layout = "~/Views/AdminLayout/Index.cshtml"; ;
 }
 
 <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -13,6 +13,9 @@
         <input type="hidden" asp-for="CategoryId" />
         <label>Kategori Adı</label>
         <input type="text" asp-for="CategoryName" class="form-control" />
+        <br />
+        <label>Icon Url</label>
+        <input type="text" asp-for="IconUrl" class="form-control" />
         <br />
         <button class="btn btn-info">Kategoriyi Güncelle</button>
     </form>

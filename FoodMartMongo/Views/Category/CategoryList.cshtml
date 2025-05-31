@@ -1,7 +1,7 @@
 ﻿@model List<FoodMartMongo.Dtos.CategoryDtos.ResultCategoryDto>
 
 @{
-    Layout = null;
+    Layout = "~/Views/AdminLayout/Index.cshtml"; ;
 }
 
 <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -12,6 +12,7 @@
         <tr>
             <th>#</th>
             <th>Kategori Adı</th>
+            <th>İkon Url</th>
             <th>Sil</th>
             <th>Güncelle</th>
         </tr>
@@ -20,6 +21,7 @@
             <tr>
                 <td>@item.CategoryId</td>
                 <td>@item.CategoryName</td>
+                <td>@item.IconUrl</td>
                 <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger">Sil</a></td>
                 <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-success">Güncelle</a></td>
             </tr>

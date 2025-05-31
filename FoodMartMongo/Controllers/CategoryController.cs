@@ -11,7 +11,7 @@ namespace FoodMartMongo.Controllers
         {
             _categoryService = categoryService;
         }
-        public async Task< IActionResult> CategoryList()
+        public async Task<IActionResult> CategoryList()
         {
             var values = await _categoryService.GetAllCategoryAsync();
             return View(values);
