@@ -14,10 +14,10 @@ Admin Panelinin Sunduğu İmkanlar
 4.	Veri Silme (Delete)
 
 Teknolojiler
-•	Backend: ASP.NET Core 6.0
-•	Veritabanı: MongoDB
-•	Frontend: Razor Pages, Bootstrap 5
-•	Diğer: AutoMapper,MailKit,ViewComponent Kullanımı
+•	ASP.NET Core 6.0
+• MongoDB
+•	Razor Pages, Bootstrap 5
+•	AutoMapper,MailKit,ViewComponent Kullanımı
 
 
 ![1](https://github.com/user-attachments/assets/7b8ba73f-0afd-416a-93ef-253b584d7ae2)
