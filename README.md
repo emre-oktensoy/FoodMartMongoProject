@@ -1,6 +1,6 @@
 ASP.NET Core ile MongoDB Tabanlı Admin Panelli FoodMart Projesi 
 
-FoodMart ASP.NET Core tabanlı projede ürünlerin satışı, MongoDB'nin esnek ve yüksek performanslı yapısıyla güçlü bir veri yönetim çözümü sunuyor. Admin paneli sayesinde, veriler üzerinde kolaylıkla CRUD (Create, Read, Update, Delete) işlemleri gerçekleştirebiliyor.
+FoodMart, ASP.NET Core tabanlı  ürünlerin satış projesidir. Projede MongoDB'nin esnek ve yüksek performanslı yapısıyla güçlü bir veri yönetim çözümü sunuluyor. Admin paneli sayesinde, veriler üzerinde kolaylıkla CRUD (Create, Read, Update, Delete) işlemleri gerçekleştirebiliyor.
 
 Projenin Temel Özellikleri
 •	ASP.NET Core MVC mimarisi ile güçlü ve modüler yapı
